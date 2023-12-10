@@ -1,0 +1,33 @@
+<!-- Hides button before showing print dialogue, then shows buttons after closing print dialogue -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		.topButtons{
+			display:block;
+		}
+	</style>
+
+</head>
+<body>
+	
+	<div id="topButtons">
+		<p><button onclick="printMe()" >Print</button></p>
+	</div>
+
+	<script>
+		var topButtons = document.getElementById('topButtons');
+	
+		function printMe(){
+			topButtons.style.display = "none";
+			window.print();
+			topButtons.style.display = "block";
+		}
+
+	</script>
+</body>
+</html>
