@@ -14,7 +14,7 @@ if primes:
 else:
     num1 = 2
 
-while num1 <= 1000000:
+while True:
     is_prime = True
     increaser = 2
 
