@@ -1,4 +1,5 @@
 <?php
+// Jquery required
 function login($conn, $submittedUsername, $submittedPassword) {
     if (isset($_SESSION['logged_in']) and $_SESSION['logged_in'] == TRUE){
         // Already logged in
